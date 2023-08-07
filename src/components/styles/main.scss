@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Inter-regular";
+  src: url("../assets/fonts/Inter-Regular.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter-semiBold";
+  src: url("../assets/fonts/Inter-SemiBold.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter-bold";
+  src: url("../assets/fonts/Inter-Bold.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter-medium";
+  src: url("../assets/fonts/Inter-Medium.ttf") format("woff2");
+}
+@font-face {
+  font-family: "Inter-bold";
+  src: url("../assets/fonts/Inter-Bold.ttf") format("woff2");
+}
+
+$white-color: #ffffff;
+$light-gray: #f5f7fa;
+$dark-gray: #4d4d4d;
+$medium-gray: #717171;
+$orange-color: #ff8a00;
+$transparent: rgba(255, 255, 255, 0);
+$links-color: #18191f;
+$dots-color: rgba(255, 165, 0, 0.3);
+
+$heading-one-font: 64px;
+$heading-two-font: 36px;
+$pragraph-font: 16px;
+
+$heading-one-family: "Inter-semibold";
+$heading-two-family: "Inter-bold";
+$links-family: "Inter-Regular";
+$paragraph-family: "Inter-medium";
+
+body,
+html {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+  background-color: $white-color;
+}

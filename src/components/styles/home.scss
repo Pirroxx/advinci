@@ -1,0 +1,112 @@
+@import "./main.scss";
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    filter: brightness(40%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    // transition: opacity 1.5s ease;
+  }
+}
+
+.home-section {
+  position: relative;
+  height: 1000px;
+  overflow: hidden;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  bottom: 10%;
+  transform: translate(-50%, -50%);
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: $white-color;
+  h1 {
+    font-size: $heading-one-font;
+    font-family: $heading-one-family;
+    margin-bottom: 10px;
+    letter-spacing: 3.5px;
+  }
+}
+
+.second-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: $white-color;
+
+  p {
+    font-size: $pragraph-font;
+    font-family: $paragraph-family;
+    letter-spacing: 1px;
+  }
+}
+
+.btn-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: $white-color;
+}
+.btn-demo-book {
+  background-color: $orange-color;
+  border: $orange-color;
+  border-radius: 4px;
+  padding: 14px 32px 14px 32px;
+  font-size: $pragraph-font;
+  font-family: $paragraph-family;
+  color: $white-color;
+  cursor: pointer;
+}
+.dots-container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: $white-color;
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $dots-color;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+
+    &.active {
+      background-color: $orange-color;
+    }
+  }
+}
