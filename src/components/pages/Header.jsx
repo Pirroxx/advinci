@@ -12,18 +12,12 @@ const Header = () => {
 
   return (
     <nav className="navbar">
-      <div
-        className="header-container"
-        style={{
-          backgroundColor: showNavbar ? "black" : "transparent",
-          transition: "0.7s ease-in",
-        }}
-      >
+      <div className="header-container">
         <div className="logo">
           <img src={logo} alt="" />
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
-          <MenuIcon style={{ color: "#fff" }} />
+          <MenuIcon style={{ color: "black" }} />
         </div>
         <div className={`nav-elements  ${showNavbar && "active"}`}>
           <ul>

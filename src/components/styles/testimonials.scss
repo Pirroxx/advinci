@@ -1,0 +1,83 @@
+@import "./main.scss";
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  h1 {
+    color: $dark-gray;
+    font-size: $heading-two-font;
+    font-family: $heading-one-family;
+    letter-spacing: 1px;
+    margin-bottom: -15px;
+  }
+  p {
+    color: $medium-gray;
+    font-size: $pragraph-font;
+    font-family: $links-family;
+    letter-spacing: 1.2px;
+  }
+}
+
+.testimonials-wrapper {
+  display: flex;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin: 20px;
+}
+.img-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.border-one {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 300px;
+  width: 30%;
+  margin: 3%;
+  line-height: 30px;
+  p {
+    letter-spacing: 1.7px;
+    // width: ;
+    margin: 30px;
+  }
+}
+.stars {
+  width: 100px;
+  margin: 3%;
+}
+.stars-three {
+  width: 100px;
+  margin: 5%;
+}
+.border-two {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 300px;
+  width: 30%;
+  line-height: 30px;
+  p {
+    letter-spacing: 1.7px;
+    margin: 30px;
+  }
+}
+
+.border-three {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 300px;
+  width: 30%;
+  margin: 3%;
+  line-height: 30px;
+  p {
+    letter-spacing: 1.7px;
+    margin: 28px;
+  }
+}

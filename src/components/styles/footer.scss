@@ -1,0 +1,95 @@
+@import "./main.scss";
+
+.footer-container {
+  background-color: $orange-color;
+  display: flex;
+  justify-content: space-evenly;
+  height: auto;
+  width: 100%;
+  padding-bottom: 3rem;
+}
+.wrapper-one {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  margin-left: 1rem;
+  justify-content: center;
+  p {
+    color: $white-color;
+    font-size: $pragraph-font;
+    font-family: $paragraph-family;
+    letter-spacing: 0.8px;
+  }
+}
+
+.social-logos {
+  display: flex;
+  justify-content: space-between;
+  img {
+    height: 32px;
+    width: 32px;
+  }
+}
+.wrapper-two,
+.wrapper-three {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  margin-left: 1rem;
+  justify-content: center;
+  h1 {
+    color: $white-color;
+    font-size: $heading-two-font;
+    font-family: $heading-one-family;
+  }
+  a {
+    color: $white-color;
+    font-size: $pragraph-font;
+    font-family: $links-family;
+    text-decoration: none;
+    margin: 10px;
+  }
+}
+
+.wrapper-four {
+  display: flex;
+  flex-direction: column;
+  margin-top: -4rem;
+  justify-content: center;
+  h1 {
+    color: $white-color;
+    font-size: $heading-two-font;
+    font-family: $heading-one-family;
+  }
+  input {
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: $white-color;
+    opacity: 0.2;
+  }
+  ::placeholder {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+.input-container {
+  position: relative;
+  display: inline-block;
+}
+
+.input-container input {
+  padding-right: 40px;
+}
+
+.input-container img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}

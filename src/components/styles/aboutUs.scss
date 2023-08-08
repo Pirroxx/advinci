@@ -1,0 +1,136 @@
+@import "main.scss";
+.aboutus-container {
+  width: 100%;
+  height: 100%;
+  background-color: $light-gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: $dark-gray;
+    font-size: $heading-two-font;
+    font-family: $heading-one-family;
+    letter-spacing: 1px;
+    margin-bottom: -15px;
+  }
+}
+
+.description {
+  color: $medium-gray;
+  font-size: $pragraph-font;
+  font-family: $links-family;
+  letter-spacing: 1.2px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 50%;
+}
+.aboutus-services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  h1 {
+    color: $dark-gray;
+    font-size: $heading-two-font;
+    font-family: $heading-one-family;
+    letter-spacing: 1px;
+  }
+  p {
+    color: $medium-gray;
+    font-size: $pragraph-font;
+    font-family: $links-family;
+    letter-spacing: 1.2px;
+  }
+}
+.services-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    width: 50%;
+  }
+}
+.texting {
+  display: flex;
+  flex-direction: column;
+  padding-right: 15rem;
+  width: 30%;
+  height: 50%;
+  letter-spacing: 1px;
+  h1 {
+    font-size: $heading-two-font;
+    font-family: $heading-two-family;
+    color: $dark-gray;
+  }
+  p {
+    font-size: $paragraph-family;
+    font-family: $paragraph-family;
+    color: $medium-gray;
+  }
+}
+.btn-demo-one {
+  width: 30%;
+  color: $white-color;
+  background-color: $orange-color;
+  border: $orange-color;
+  border-radius: 4px;
+  padding: 14px 32px 14px 32px;
+  font-size: $pragraph-font;
+  font-family: $paragraph-family;
+  color: $white-color;
+  cursor: pointer;
+}
+.services-section-two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    width: 50.8%;
+  }
+}
+.texting-two {
+  padding-left: 10.6%;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+  letter-spacing: 1px;
+  h1 {
+    font-size: $heading-two-font;
+    font-family: $heading-two-family;
+    color: $dark-gray;
+  }
+  p {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: $paragraph-family;
+    font-family: $paragraph-family;
+    color: $medium-gray;
+    width: 80%;
+  }
+}
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // top: -15rem;
+}
+
+.btn-demo-two {
+  width: 25%;
+  color: $white-color;
+  background-color: $orange-color;
+  border: $orange-color;
+  border-radius: 4px;
+  padding: 14px 32px 14px 32px;
+  font-size: $pragraph-font;
+  font-family: $paragraph-family;
+  color: $white-color;
+  cursor: pointer;
+}
