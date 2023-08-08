@@ -83,6 +83,29 @@
   font-family: $paragraph-family;
   color: $white-color;
   cursor: pointer;
+  transition: 0.5s ease;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 70%; // Half of the button width
+    background-color: transparent;
+    transition: 0.8s ease;
+    border-top-left-radius: 5px;
+    // border-top-right-radius: 20px 10px;
+    // border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 5px;
+    z-index: 1; // To ensure it's on top
+  }
+
+  &:hover::before {
+    background-color: #8f5b20;
+    opacity: 0.5;
+  }
 }
 .dots-container {
   display: flex;

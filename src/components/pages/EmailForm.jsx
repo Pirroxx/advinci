@@ -4,12 +4,35 @@ import "../styles/emailForm.scss";
 import phone from "../assets/phone.svg";
 import adress from "../assets/location.svg";
 import email from "../assets/email.svg";
+import Swal from "sweetalert2";
+import "sweetalert2/dist/sweetalert2.min.css";
 
 const EmailForm = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    const emailInput = form.current.querySelector('input[name="user_email"]');
+    const emailValue = emailInput.value;
+
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+    if (!emailPattern.test(emailValue)) {
+      Swal.fire({
+        icon: "error",
+        title: "Invalid Email",
+        html: '<span style="color: #717171; font-family: Arial, sans-serif">Please enter a valid email address.</span>',
+        customClass: {
+          popup: "custom-popup-class",
+          title: "custom-title-class",
+          text: "custom-text-class",
+          content: "custom-content-class",
+          confirmButton: "custom-confirm-button-class",
+        },
+      });
+      return;
+    }
 
     emailjs
       .sendForm(
@@ -20,9 +43,33 @@ const EmailForm = () => {
       )
       .then(
         (result) => {
+          Swal.fire({
+            icon: "success",
+            title: "Success",
+            html: '<span style="color: #717171; font-family: Arial, sans-serif">Email sent successfully!</span>',
+            customClass: {
+              popup: "custom-popup-class",
+              title: "custom-title-class",
+              text: "custom-text-class",
+              content: "custom-content-class",
+              confirmButton: "custom-confirm-button-class",
+            },
+          });
           console.log(result.text);
         },
         (error) => {
+          Swal.fire({
+            icon: "error",
+            title: "Error",
+            html: '<span style="color: #717171; font-family: Arial, sans-serif">Failed to send email. Please try again later!</span>',
+            customClass: {
+              popup: "custom-popup-class",
+              title: "custom-title-class",
+              text: "custom-text-class",
+              content: "custom-content-class",
+              confirmButton: "custom-confirm-button-class",
+            },
+          });
           console.log(error.text);
         }
       );
@@ -61,13 +108,28 @@ const EmailForm = () => {
         <div className="wrapper">
           <form ref={form} onSubmit={sendEmail}>
             <div className="fis-container">
-              <input placeholder="Name" type="text" name="user_name" />
+              <input required placeholder="Name" type="text" name="user_name" />
 
-              <input placeholder="email" type="email" name="user_email" />
+              <input
+                required
+                placeholder="email"
+                type="email"
+                name="user_email"
+              />
             </div>
             <div className="second-container">
-              <input className="subject" placeholder="subject" name="message" />
-              <input className="message" placeholder="message" name="message" />
+              <input
+                required
+                className="subject"
+                placeholder="subject"
+                name="message"
+              />
+              <input
+                required
+                className="message"
+                placeholder="message"
+                name="message"
+              />
               <input className="input-button" type="submit" value="Send" />
             </div>
           </form>

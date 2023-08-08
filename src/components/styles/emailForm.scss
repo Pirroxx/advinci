@@ -106,6 +106,12 @@
   cursor: pointer;
   width: 192px;
   height: 52px;
+  transition: 0.5s ease;
+
+  &:hover {
+    background-color: #8f5b20;
+    transition: 0.5s ease;
+  }
 }
 .role {
   font-family: $heading-one-family;
@@ -116,4 +122,24 @@
   color: #606060;
   font-size: 18px;
   font-family: $paragraph-family;
+}
+
+/* Add this CSS to your stylesheet */
+.swal2-popup .swal2-actions .swal2-confirm.custom-confirm-button-class {
+  background-color: $orange-color !important;
+  color: white !important;
+  border: none !important;
+}
+
+.swal2-popup .swal2-actions .swal2-confirm.custom-confirm-button-class:hover {
+  background-color: #e68000 !important;
+}
+.custom-title-class {
+  color: #ff9900 !important;
+  font-size: $heading-two-family !important;
+  font-family: $heading-one-family !important;
+}
+
+.custom-text-class {
+  color: #e68000 !important;
 }

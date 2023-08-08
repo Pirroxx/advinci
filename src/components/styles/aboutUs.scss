@@ -84,6 +84,12 @@
   font-family: $paragraph-family;
   color: $white-color;
   cursor: pointer;
+  transition: 0.5s ease;
+
+  &:hover {
+    background-color: #8f5b20;
+    transition: 0.5s ease;
+  }
 }
 .services-section-two {
   display: flex;
@@ -133,4 +139,10 @@
   font-family: $paragraph-family;
   color: $white-color;
   cursor: pointer;
+  transition: 0.5s ease;
+
+  &:hover {
+    background-color: #8f5b20;
+    transition: 0.5s ease;
+  }
 }
