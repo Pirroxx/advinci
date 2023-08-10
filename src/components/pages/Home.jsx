@@ -23,10 +23,12 @@ const Home = () => {
       <div className="home-section">
         <img src={images[currentImageIndex]} alt="" />
         <div className="text-overlay">
-          <h1>Creativity Unleashed Your Ultimate Ad Agency</h1>
+          <h1 className="home-head">
+            Creativity Unleashed Your Ultimate Ad Agency
+          </h1>
         </div>
         <div className="second-text">
-          <p>
+          <p className="home-desc">
             Where to grow your business as a photographer: site or social media?
           </p>
         </div>

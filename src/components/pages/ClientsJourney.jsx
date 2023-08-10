@@ -1,15 +1,16 @@
 import React from "react";
 import "../styles/clientsJourney.scss";
-import mew from "../assets/new.png";
+// import mew from "../assets/new.png";
 import metdaan from "../assets/metdaan.svg";
+import mew from "../assets/newsvg.svg";
 
 const ClientsJourney = () => {
   return (
     <div className="clients-journey-conatiner">
       <div className="journey-section ">
         <div className="clients-text">
-          <h1>Our Clients Journey</h1>
-          <p>
+          <h1 className="journey-head">Our Clients Journey</h1>
+          <p className="journey-desc">
             Creative, Targeted, Data-Driven, Results-Oriented, Comprehensive.
           </p>
         </div>

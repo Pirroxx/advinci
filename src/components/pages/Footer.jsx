@@ -43,21 +43,38 @@ const Footer = () => {
         </div>
       </div>
       <div className="wrapper-two">
-        <h1>Company</h1>
+        <h1 className="company">Company</h1>
         <a href="">About Us</a>
         <a href="">Testimonial</a>
         <a href="">Contact Us</a>
         <a href="">Clients Journey</a>
       </div>
       <div className="wrapper-three">
-        <h1>Support</h1>
+        <h1 className="company">Support</h1>
         <a href="">About Us</a>
         <a href="">Testimonial</a>
         <a href="">Contact Us</a>
         <a href="">Clients Journey</a>
       </div>
+      <div className="hidd-div">
+        <div className="input-container-hidd">
+          <input placeholder="Your email address" type="text" />
+          {/* <button type="submit" value="Send"> */}
+          <img src={send} alt="" />
+          {/* </button> */}
+        </div>
+        <div className="social-logos-hidd">
+          <img src={ig} alt="" />
+          <img src={social} alt="" />
+          <img src={twitter} alt="" />
+          <img src={yt} alt="" />
+        </div>
+        <p className="comp-hidd">
+          Copyright © 2020 AD Vinci <br /> All rights reserved
+        </p>
+      </div>
       <div className="wrapper-four">
-        <h1>Stay up to date</h1>
+        <h1 className="comp">Stay up to date</h1>
         <form ref={form} onSubmit={sendEmail}>
           <div class="input-container">
             <input placeholder="Your email address" type="text" />

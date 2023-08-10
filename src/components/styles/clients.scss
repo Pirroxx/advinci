@@ -20,18 +20,18 @@
 }
 .clients-text {
   padding: -50px;
-  h1 {
-    color: $dark-gray;
-    font-size: $heading-two-font;
-    font-family: $heading-one-family;
-    margin-bottom: 5px;
-  }
-  p {
-    color: $medium-gray;
-    font-size: $pragraph-font;
-    font-family: $links-family;
-    letter-spacing: 1px;
-  }
+}
+.clients-header {
+  color: $dark-gray;
+  font-size: $heading-two-font;
+  font-family: $heading-one-family;
+  margin-bottom: 5px;
+}
+.clients-desc {
+  color: $medium-gray;
+  font-size: $pragraph-font;
+  font-family: $links-family;
+  letter-spacing: 1px;
 }
 @keyframes slide {
   from {
@@ -80,6 +80,26 @@
     img {
       height: 50px;
       margin: 0 50px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .clients-header {
+    font-size: 10px;
+    font-family: $links-family;
+    letter-spacing: 1px;
+  }
+  .clients-desc {
+    font-size: 10px;
+    font-family: $links-family;
+    letter-spacing: 1px;
+  }
+
+  .logos {
+    img {
+      height: 50px;
+      width: 100px;
     }
   }
 }

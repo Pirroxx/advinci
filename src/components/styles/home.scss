@@ -35,14 +35,13 @@
   flex-direction: column;
   text-align: center;
   color: $white-color;
-  h1 {
-    font-size: $heading-one-font;
-    font-family: $heading-one-family;
-    margin-bottom: 10px;
-    letter-spacing: 3.5px;
-  }
 }
-
+.home-head {
+  font-size: $heading-one-font;
+  font-family: $heading-one-family;
+  margin-bottom: 10px;
+  letter-spacing: 3.5px;
+}
 .second-text {
   position: absolute;
   display: flex;
@@ -54,14 +53,12 @@
   transform: translateX(-50%);
   text-align: center;
   color: $white-color;
-
-  p {
-    font-size: $pragraph-font;
-    font-family: $paragraph-family;
-    letter-spacing: 1px;
-  }
 }
-
+.home-desc {
+  font-size: $pragraph-font;
+  font-family: $paragraph-family;
+  letter-spacing: 1px;
+}
 .btn-container {
   position: absolute;
   display: flex;
@@ -131,5 +128,51 @@
     &.active {
       background-color: $orange-color;
     }
+  }
+}
+@media (max-width: 768px) {
+  .home-container {
+    .text-overlay {
+      width: 100%;
+    }
+    .home-head {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      font-size: 27px;
+      width: 90%;
+      margin-bottom: 13rem;
+      margin-top: 3rem;
+      margin: 4px;
+      padding-top: -150px;
+    }
+    .second-text {
+      bottom: 37%;
+    }
+    .btn-container {
+      bottom: 28%;
+    }
+    .btn-demo-book {
+      padding: 10px 20px;
+      font-size: 14px;
+      margin: 10rem;
+      width: 140px;
+    }
+    .dots-container {
+      bottom: 37%;
+    }
+  }
+  .text-overlay {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .home-desc {
+    width: 363px;
+    font-size: 17px;
+    margin: 10rem;
   }
 }

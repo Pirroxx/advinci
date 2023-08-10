@@ -7,15 +7,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  h1 {
-    color: $dark-gray;
-    font-size: $heading-two-font;
-    font-family: $heading-one-family;
-    letter-spacing: 1px;
-    margin-bottom: -15px;
-  }
 }
-
+.services-header {
+  color: $dark-gray;
+  font-size: $heading-two-font;
+  font-family: $heading-one-family;
+  letter-spacing: 1px;
+  margin-bottom: -15px;
+}
 .description {
   color: $medium-gray;
   font-size: $pragraph-font;
@@ -40,12 +39,14 @@
     font-family: $heading-one-family;
     letter-spacing: 1px;
   }
-  p {
-    color: $medium-gray;
-    font-size: $pragraph-font;
-    font-family: $links-family;
-    letter-spacing: 1.2px;
-  }
+}
+
+.misson {
+  // color: $medium-gray;
+  font-size: $pragraph-font;
+  color: red;
+  font-family: $links-family;
+  letter-spacing: 1.2px;
 }
 .services-section {
   display: flex;
@@ -106,11 +107,6 @@
   width: 40%;
   height: 100%;
   letter-spacing: 1px;
-  h1 {
-    font-size: $heading-two-font;
-    font-family: $heading-two-family;
-    color: $dark-gray;
-  }
   p {
     display: flex;
     flex-direction: column;
@@ -126,6 +122,9 @@
   flex-direction: column;
   align-items: center;
   // top: -15rem;
+  font-size: $heading-two-font;
+  font-family: $heading-two-family;
+  color: $dark-gray;
 }
 
 .btn-demo-two {
@@ -144,5 +143,39 @@
   &:hover {
     background-color: #8f5b20;
     transition: 0.5s ease;
+  }
+}
+.hidd-img {
+  display: none;
+}
+@media (max-width: 768px) {
+  .aboutus-container {
+    padding-top: 30px;
+  }
+  .aboutus-services {
+    p {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      font-size: 13px;
+    }
+    h1 {
+      font-size: 25px;
+    }
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .show-img {
+    display: none;
+  }
+  .hidd-img {
+    display: flex;
+  }
+  .misson {
+    color: red;
   }
 }

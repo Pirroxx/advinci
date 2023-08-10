@@ -20,19 +20,21 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  h1 {
-    margin-bottom: -15px;
-    color: $dark-gray;
-    font-size: $heading-two-font;
-    font-family: $heading-one-family;
-    letter-spacing: 1px;
-  }
-  p {
-    color: $medium-gray;
-    font-size: $pragraph-font;
-    font-family: $links-family;
-    letter-spacing: 1.2px;
-  }
+}
+
+.journey-head {
+  margin-bottom: -15px;
+  color: $dark-gray;
+  font-size: $heading-two-font;
+  font-family: $heading-one-family;
+  letter-spacing: 1px;
+}
+
+.journey-desc {
+  color: $medium-gray;
+  font-size: $pragraph-font;
+  font-family: $links-family;
+  letter-spacing: 1.2px;
 }
 
 .img-container {
@@ -58,6 +60,23 @@
   cursor: pointer;
   text-align: center;
   justify-content: center;
-  //   object-fit: contain;
   padding-top: 10%;
+}
+@media (max-width: 768px) {
+  .clients-text {
+    h1 {
+      // margin-bottom: -15px;
+      color: $dark-gray;
+      font-size: 24px;
+      font-family: $heading-one-family;
+      letter-spacing: 1px;
+    }
+  }
+  .journey-desc {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    letter-spacing: 1.2px;
+  }
 }

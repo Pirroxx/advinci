@@ -7,7 +7,7 @@ const AboutUs = () => {
   return (
     <div className="aboutus-container">
       <div className="aboutus-services">
-        <h1>Our Services</h1>
+        <h1 className="services-header">Our Services</h1>
         <p className="description">
           At AD Vinci, we are passionate about empowering businesses to reach
           their full potential through the power of digital marketing. Our team
@@ -17,15 +17,16 @@ const AboutUs = () => {
         </p>
       </div>
       <div className="services-section">
-        <img src={misson1} alt="" />
+        <img className="show-img" src={misson1} alt="" />
         <div className="texting">
-          <h1>Our Mission</h1>
+          <h1 className="misson">Our Mission</h1>
           <p>
             Our mission is to be the driving force behind our clients' success
             in the digital landscape. We strive to deliver exceptional results
             by combining creativity, data-driven strategies, and cutting-edge
             technology.
           </p>
+          <img className="hidd-img" src={misson1} alt="" />
         </div>
       </div>
       <div className="services-section-two">

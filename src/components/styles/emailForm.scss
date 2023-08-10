@@ -143,3 +143,102 @@
 .custom-text-class {
   color: #e68000 !important;
 }
+@media (max-width: 768px) {
+  .email-container {
+    padding-top: 30px;
+    display: flex;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .seperated {
+    padding: 30px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .fis-container {
+    flex-direction: column;
+    // padding-top: 30px;
+    margin-bottom: -20px;
+    width: 100%;
+
+    input {
+      // width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+    }
+  }
+
+  .subject,
+  .message {
+    width: 100%;
+  }
+
+  .about-us-logos {
+    flex-direction: column;
+    align-items: center;
+    display: none;
+
+    .logo-wrapper {
+      margin-bottom: 20px;
+    }
+
+    .vl {
+      display: none;
+    }
+  }
+
+  .input-button {
+    margin-top: 1rem;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .p-wrapp {
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    // text-align: ;
+  }
+  .role {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+  .desc {
+    font-size: 16px;
+    padding-right: 60px;
+  }
+  .second-container {
+    display: flex;
+    flex-direction: column;
+    // padding: 0;
+    width: 290px;
+
+    ::placeholder {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 18px;
+      padding: 8px;
+    }
+  }
+  .input-button {
+    margin-top: 2rem;
+
+    margin-left: 20%;
+    padding: 0;
+    cursor: pointer;
+    width: 192px;
+    height: 52px;
+    transition: 0.5s ease;
+  }
+}

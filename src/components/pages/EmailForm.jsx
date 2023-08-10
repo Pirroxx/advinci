@@ -82,9 +82,9 @@ const EmailForm = () => {
         <div className="logo-wrapper">
           <div className="about-us-logos">
             <img src={phone} alt="" />
-            <div class="vl"></div>
+            <div className="vl"></div>
             <div className="p-wrapp">
-              <p className="role">PHONE::</p>
+              <p className="role">PHONE:</p>
               <p className="desc">+2348141898014</p>
             </div>
           </div>

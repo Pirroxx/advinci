@@ -12,11 +12,13 @@ const Testimonials = () => {
       className="testimonials-container
   "
     >
-      <h1>Testimonials</h1>
-      <p>Satisfied, Rave Reviews, Trustworthy, Impressive, Reliability.</p>
+      <h1 className="first-header">Testimonials</h1>
+      <p className="desc-main">
+        Satisfied, Rave Reviews, Trustworthy, Impressive, Reliability.
+      </p>
       <div className="testimonials-wrapper">
         <div className="border-one">
-          <p>
+          <p className="testimonials-desc">
             “We are incredibly pleased with the outstanding services provided by
             AD Vinci. Their expertise in social media advertising has been
             instrumental in elevating our brand, KFC, to new heights of
@@ -28,7 +30,7 @@ const Testimonials = () => {
           </div>
         </div>
         <div className="border-two">
-          <p>
+          <p className="testimonials-desc">
             “After our audit & strategy, there was a 100% increase in leads,
             resulting in a larger number of conversions for the company.
             Growzillas are extremely meticulous in their planning and
@@ -40,7 +42,7 @@ const Testimonials = () => {
           </div>
         </div>
         <div className="border-three">
-          <p>
+          <p className="testimonials-desc">
             “We are thrilled with the exceptional service and results delivered
             by AD Vinci. Their team's expertise in social media advertising has
             taken our brand, Dua.com, to new heights.

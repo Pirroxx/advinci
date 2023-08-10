@@ -14,12 +14,12 @@
     letter-spacing: 1px;
     margin-bottom: -15px;
   }
-  p {
-    color: $medium-gray;
-    font-size: $pragraph-font;
-    font-family: $links-family;
-    letter-spacing: 1.2px;
-  }
+}
+.clients-desc-main {
+  color: $medium-gray;
+  font-size: $pragraph-font;
+  font-family: $links-family;
+  letter-spacing: 1.2px;
 }
 .our-services {
   display: flex;
@@ -62,11 +62,12 @@
     font-family: $heading-two-family;
     color: $dark-gray;
   }
-  p {
-    font-size: $paragraph-family;
-    font-family: $paragraph-family;
-    color: $medium-gray;
-  }
+}
+
+.service-one {
+  font-size: $paragraph-family;
+  font-family: $paragraph-family;
+  color: $medium-gray;
 }
 .btn-demo-one {
   width: 30%;
@@ -106,15 +107,15 @@
     font-family: $heading-two-family;
     color: $dark-gray;
   }
-  p {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    font-size: $paragraph-family;
-    font-family: $paragraph-family;
-    color: $medium-gray;
-    width: 80%;
-  }
+}
+.service-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: $paragraph-family;
+  font-family: $paragraph-family;
+  color: $medium-gray;
+  width: 80%;
 }
 .heading-container {
   display: flex;
@@ -139,5 +140,140 @@
   &:hover {
     background-color: #8f5b20;
     transition: 0.5s ease;
+  }
+}
+
+.nono-one {
+  display: none;
+}
+@media (max-width: 768px) {
+  .our-services {
+    h1 {
+    }
+  }
+  .texting {
+    padding-right: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    letter-spacing: 1px;
+    text-align: center;
+    h1 {
+      font-size: 26px;
+      margin-bottom: -40px;
+    }
+    p {
+      font-size: 13px;
+      width: 80%;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+    .btn-demo-one {
+      width: 180px;
+      align-self: center;
+    }
+  }
+  .service-header {
+  }
+  .services-container {
+    width: 100%;
+    height: 100%;
+    h1 {
+      font-size: 25px;
+      letter-spacing: 1px;
+      padding-bottom: 20px;
+      padding-top: 10px;
+    }
+  }
+
+  .clients-desc-main {
+    font-size: $pragraph-font;
+    font-family: $links-family;
+    letter-spacing: 1.2px;
+  }
+  .our-services {
+    align-items: center;
+    padding-bottom: 10px;
+    h1 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      font-size: 15px;
+    }
+  }
+  .services-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+    }
+  }
+
+  .services-section-two {
+    display: flex;
+    flex-direction: column;
+    img {
+      width: 100%;
+      // padding-bottom: 50px;
+    }
+  }
+  .texting-two {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    letter-spacing: 1px;
+    h1 {
+      font-size: 25px;
+      padding-top: 20px;
+      padding-bottom: 0;
+      text-align: center;
+      align-items: center;
+      margin-bottom: -35px;
+    }
+    p {
+      font-size: 12px;
+      padding-top: -40px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+  }
+  .service-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: $paragraph-family;
+    font-family: $paragraph-family;
+    color: $medium-gray;
+    width: 80%;
+  }
+  .btn-demo-two {
+    width: 180px;
+    height: 50px;
+    align-self: center;
+    padding-bottom: 0;
+    color: $white-color;
+    background-color: $orange-color;
+    border: $orange-color;
+    border-radius: 4px;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  .nono-one {
+    padding-top: 40px;
+    display: flex;
+  }
+  .nono-uno {
+    display: none;
   }
 }
