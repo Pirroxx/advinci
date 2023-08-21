@@ -109,7 +109,7 @@
   .footer-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    // width: 90%;
   }
   .wrapper-three {
     display: none;
@@ -152,7 +152,7 @@
   }
 
   .input-container-hidd input {
-    padding-right: 40px;
+    padding-right: 30px;
   }
 
   .input-container-hidd img {
@@ -169,7 +169,6 @@
     justify-content: flex-start;
     text-align: left;
     margin-right: 3rem;
-    width: 100%;
     color: $white-color;
     font-size: 15px;
     font-family: $heading-one-family;
@@ -187,8 +186,6 @@
     display: flex;
     justify-content: flex-start;
     margin-left: 35px;
-
-    // justify-content: space-evenly;
     img {
       height: 32px;
       margin: 17px;

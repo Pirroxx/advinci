@@ -124,7 +124,6 @@
   font-family: $paragraph-family;
 }
 
-/* Add this CSS to your stylesheet */
 .swal2-popup .swal2-actions .swal2-confirm.custom-confirm-button-class {
   background-color: $orange-color !important;
   color: white !important;
@@ -178,9 +177,25 @@
     }
   }
 
-  .subject,
+  .subject {
+    width: 100%;
+    ::placeholder {
+      display: flex;
+      align-items: center;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 18px;
+      padding: 80px;
+    }
+  }
   .message {
     width: 100%;
+    ::placeholder {
+      display: flex;
+      align-items: center;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 18px;
+      padding: 8px;
+    }
   }
 
   .about-us-logos {

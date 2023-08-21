@@ -13,28 +13,31 @@ const Header = () => {
   return (
     <nav className="navbar">
       <div className="header-container">
-        <div className="logo">
-          <img src={logo} alt="" />
+        <div className="this-container">
+          <div className="logo">
+            <img src={logo} alt="" />
+          </div>
+          <div className="menu-icon" onClick={handleShowNavbar}>
+            <MenuIcon style={{ color: "black" }} />
+          </div>
         </div>
-        <div className="menu-icon" onClick={handleShowNavbar}>
-          <MenuIcon style={{ color: "black" }} />
-        </div>
+
         <div className={`nav-elements  ${showNavbar && "active"}`}>
           <ul>
             <li>
-              <a href="">Home</a>
+              <a href="#home">Home</a>
             </li>
             <li>
-              <a href="">Clients</a>
+              <a href="#clients">Clients</a>
             </li>
             <li>
-              <a href="">Service</a>
+              <a href="#service">Service</a>
             </li>
             <li>
-              <a href="#FAQ">Testimonials</a>
+              <a href="#testimonials">Testimonials</a>
             </li>
             <li>
-              <a href="#FAQ">About Us</a>
+              <a href="#aboutus">About Us</a>
             </li>
             <li>
               <a href="#FAQ">FAQ</a>

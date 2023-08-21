@@ -14,6 +14,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    overflow: hidden;
     // transition: opacity 1.5s ease;
   }
 }
@@ -21,7 +22,9 @@
 .home-section {
   position: relative;
   height: 1000px;
-  overflow: hidden;
+  display: flex;
+  transform: translateX(0); // Initial state
+  transition: transform 0.5s ease-in-out; // Smooth slide transition
 }
 
 .text-overlay {
@@ -124,6 +127,10 @@
     background-color: $dots-color;
     margin: 0 5px;
     transition: background-color 0.3s;
+    flex: 0 0 100%;
+    transition: opacity 0.5s;
+    max-width: 100%;
+    height: auto;
 
     &.active {
       background-color: $orange-color;
