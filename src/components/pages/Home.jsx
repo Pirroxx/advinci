@@ -19,32 +19,35 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="home-container">
-      <div className="home-section">
-        <img src={images[currentImageIndex]} alt="" />
-        <div className="text-overlay">
-          <h1 className="home-head">
-            Creativity Unleashed Your Ultimate Ad Agency
-          </h1>
+    <section id="home">
+      <div className="home-container">
+        <div className="home-section">
+          <img src={images[currentImageIndex]} alt="" />
+          <div className="text-overlay">
+            <h1 className="home-head">
+              Creativity Unleashed Your Ultimate Ad Agency
+            </h1>
+          </div>
+          <div className="second-text">
+            <p className="home-desc">
+              Where to grow your business as a photographer: site or social
+              media?
+            </p>
+          </div>
+          <div className="btn-container">
+            <button className="btn-demo-book">Get a demo</button>
+          </div>
         </div>
-        <div className="second-text">
-          <p className="home-desc">
-            Where to grow your business as a photographer: site or social media?
-          </p>
-        </div>
-        <div className="btn-container">
-          <button className="btn-demo-book">Get a demo</button>
+        <div className="dots-container">
+          {images.map((_, index) => (
+            <span
+              key={index}
+              className={`dot ${index === currentImageIndex ? "active" : ""}`}
+            />
+          ))}
         </div>
       </div>
-      <div className="dots-container">
-        {images.map((_, index) => (
-          <span
-            key={index}
-            className={`dot ${index === currentImageIndex ? "active" : ""}`}
-          />
-        ))}
-      </div>
-    </div>
+    </section>
   );
 };
 

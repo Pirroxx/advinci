@@ -148,7 +148,7 @@
 .hidd-img {
   display: none;
 }
-@media (max-width: 768px) {
+@media (min-width: 200px) and (max-width: 1000px) {
   .aboutus-container {
     padding-top: 30px;
   }

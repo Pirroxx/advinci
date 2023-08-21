@@ -79,7 +79,7 @@ const Footer = () => {
           <div class="input-container">
             <input placeholder="Your email address" type="text" />
             {/* <button type="submit" value="Send"> */}
-            <img src={send} alt="" />
+            {/* <img src={send} alt="" /> */}
             {/* </button> */}
           </div>
         </form>

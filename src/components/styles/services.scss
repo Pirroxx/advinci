@@ -48,6 +48,7 @@
   align-items: center;
   img {
     width: 50%;
+    box-shadow: -20px 10px 9px 4px rgba(0, 0, 0, 0.1);
   }
 }
 .texting {
@@ -93,6 +94,7 @@
   align-items: center;
   img {
     width: 50.8%;
+    box-shadow: 20px 10px 9px 4px rgba(0, 0, 0, 0.1);
   }
 }
 .texting-two {
@@ -146,7 +148,7 @@
 .nono-one {
   display: none;
 }
-@media (max-width: 768px) {
+@media (min-width: 200px) and (max-width: 1000px) {
   .our-services {
     h1 {
     }

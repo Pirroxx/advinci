@@ -88,7 +88,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 200px) and (max-width: 1000px) {
   .testimonials-container {
     display: flex;
     padding-top: 50px;

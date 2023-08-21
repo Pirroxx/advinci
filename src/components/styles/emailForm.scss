@@ -142,7 +142,7 @@
 .custom-text-class {
   color: #e68000 !important;
 }
-@media (max-width: 768px) {
+@media (min-width: 200px) and (max-width: 1000px) {
   .email-container {
     padding-top: 30px;
     display: flex;

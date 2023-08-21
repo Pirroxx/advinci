@@ -84,14 +84,14 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 200px) and (max-width: 1000px) {
   .clients-header {
-    font-size: 10px;
+    font-size: 27px;
     font-family: $links-family;
     letter-spacing: 1px;
   }
   .clients-desc {
-    font-size: 10px;
+    font-size: 20px;
     font-family: $links-family;
     letter-spacing: 1px;
   }

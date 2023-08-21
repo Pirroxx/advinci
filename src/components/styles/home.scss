@@ -137,8 +137,9 @@
     }
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 200px) and (max-width: 1000px) {
   .home-container {
+    overflow-x: hidden;
     .text-overlay {
       width: 100%;
     }
@@ -178,7 +179,7 @@
     text-align: center;
   }
   .home-desc {
-    width: 363px;
+    width: 90%;
     font-size: 17px;
     margin: 10rem;
   }
